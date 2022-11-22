@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> // inclusao de biblioteca
 
-int main(){
+int main(){ // funcao main
 
 
     
