@@ -1,43 +1,43 @@
 /*
 Integrantes:
-Nome Completo: Enrique de Lima Carvalho Matrícula: UC22103250 Curso: Engenharia de Software
-Nome Completo: Emanuelly de Souza Portela Matrícula: UC22200313 Curso: Análise e Desenvolvimento de Sistemas
-Nome Completo: Gabrielly de Souza Portela Matrícula: UC22200274 Curso: Análise e Desenvolvimento de Sistemas
+Nome Completo: Enrique de Lima Carvalho Matrï¿½cula: UC22103250 Curso: Engenharia de Software
+Nome Completo: Emanuelly de Souza Portela Matrï¿½cula: UC22200313 Curso: Anï¿½lise e Desenvolvimento de Sistemas
+Nome Completo: Gabrielly de Souza Portela Matrï¿½cula: UC22200274 Curso: Anï¿½lise e Desenvolvimento de Sistemas
 
 Questao 9 - implementar nova funcionalidade: Implementamos o ingresso PREMIUM com valor diferenciado e combo de comida/bebida
 
-Citacao de 2 conceitos aplicadas baseda no Livro Código Limpo:
-1º Regra apliacada:
-Capitulo 2 - regra - USE NOMES QUE REVELEM SEU PRÓPOSITO
-Especificar o nome de uma varivavel e/ou funcao, ficando claro para outras pessoas saberem ao que se refere e sua importancia no código 
+Citacao de 2 conceitos aplicadas baseda no Livro Cï¿½digo Limpo:
+1ï¿½ Regra apliacada:
+Capitulo 2 - regra - USE NOMES QUE REVELEM SEU PRï¿½POSITO
+Especificar o nome de uma varivavel e/ou funcao, ficando claro para outras pessoas saberem ao que se refere e sua importancia no cï¿½digo 
 
-2° Regra aplicada:
-Capitulo 4 - regra - EXPLIQUE-SE NO CÓDIGO
-Quando um código nâo da para ser claro e for preciso fazer um comentario, de preferencia em explicar o mesmo na declaracao do nome da funcao
- escreva exatamente como vc gostaria que tivesse no comentario, assim o codigo fica mais limpo e compreensível  */
+2ï¿½ Regra aplicada:
+Capitulo 4 - regra - EXPLIQUE-SE NO Cï¿½DIGO
+Quando um cï¿½digo nï¿½o da para ser claro e for preciso fazer um comentario, de preferencia em explicar o mesmo na declaracao do nome da funcao
+ escreva exatamente como vc gostaria que tivesse no comentario, assim o codigo fica mais limpo e compreensï¿½vel  */
  
  
-#include <stdio.h> // inclusão de biblioteca padrao
-#include <locale.h> // inclusão de biblioteca para tradução
-#include <stdlib.h> // inclusão de biblioteca para o comando clear
+#include <stdio.h> // inclusï¿½o de biblioteca padrao
+#include <locale.h> // inclusï¿½o de biblioteca para traduï¿½ï¿½o
+#include <stdlib.h> // inclusï¿½o de biblioteca para o comando clear
 #define SALA 90 // Definir capacidade da sala - quantidade de ingressos para aquela sessao
-#define SESSOES 2 // Definir quantidade de sessões aceitas
+#define SESSOES 2 // Definir quantidade de sessï¿½es aceitas
 #define INTEIRA 50.00 // Definir valor do ingresso - inteira
 #define MEIA 25.00 // Definir valor do ingresso - meia
 #define PREMIUM 120.00 // Definir valor do ingresso - Premium
 
 int main(){ // funcao main
 
-    setlocale(LC_ALL, "Portuguese");// comando para reconhecer acentuação
+    setlocale(LC_ALL, "Portuguese");// comando para reconhecer acentuaï¿½ï¿½o
 
-    int i = 1, j = 1, qntSessao, opcaoIngresso[SALA], qntPessoas, qntIngresso[SESSOES], idade[SALA], parar = 0; // declaração de variáveis - inteiros
-    int qntMulheres[SESSOES], qntHomens[SESSOES], qntCriancas[SESSOES], qntAdolescentes[SESSOES], qntAdultos[SESSOES], qntIdosos[SESSOES]; // declaração de variáveis - inteiros
-    int maioresHomens[SESSOES], maioresMulheres[SESSOES], qntInteiras[SESSOES], qntMeias[SESSOES], qntPremium[SESSOES]; // declaração de variáveis - inteiros
-    char sexo[SALA], recomecar, nomeFilme[2][30]; // declaração de variáveis - caracteres
+    int i = 1, j = 1, qntSessao, opcaoIngresso[SALA], qntPessoas, qntIngresso[SESSOES], idade[SALA], parar = 0; // declaraï¿½ï¿½o de variï¿½veis - inteiros
+    int qntMulheres[SESSOES], qntHomens[SESSOES], qntCriancas[SESSOES], qntAdolescentes[SESSOES], qntAdultos[SESSOES], qntIdosos[SESSOES]; // declaraï¿½ï¿½o de variï¿½veis - inteiros
+    int maioresHomens[SESSOES], maioresMulheres[SESSOES], qntInteiras[SESSOES], qntMeias[SESSOES], qntPremium[SESSOES]; // declaraï¿½ï¿½o de variï¿½veis - inteiros
+    char sexo[SALA], recomecar, nomeFilme[2][30]; // declaraï¿½ï¿½o de variï¿½veis - caracteres
 
     do{
         system("cls"); // comando para limpar o console
-    printf("Digite a quantidade de sessões: ");
+    printf("Digite a quantidade de sessï¿½es: ");
     scanf("%d", &qntSessao);
 
 
@@ -47,7 +47,7 @@ int main(){ // funcao main
         
             fflush(stdin); //limpar o buffer de saida 
 
-            recomecar = 'c'; // declaração do caractere que será utilizado para reiniciar o loop
+            recomecar = 'c'; // declaraï¿½ï¿½o do caractere que serï¿½ utilizado para reiniciar o loop
 			//inicializacoes das variaveis
             qntMulheres[i] = 0;
             qntHomens[i] = 0;
@@ -63,7 +63,7 @@ int main(){ // funcao main
             qntPremium[i] = 0;
 
                 system("cls"); // comando para limpar o console
-            printf("Sessão %d:\n", i);
+            printf("Sessï¿½o %d:\n", i);
             printf("Digite o nome do filme: ");
             fflush(stdin);
             scanf(" %[^\n]s", &nomeFilme[i]);
@@ -83,7 +83,7 @@ int main(){ // funcao main
                 qntHomens[i]++;
 
             if(!(sexo[j] == 'm' || sexo[j] == 'M' || sexo[j] == 'f' || sexo[j] == 'F'))
-                printf("Sexo inválido, tente novamente\n");
+                printf("Sexo invï¿½lido, tente novamente\n");
 
             }while(!(sexo[j] == 'm' || sexo[j] == 'M' || sexo[j] == 'f' || sexo[j] == 'F'));  //verificacao para que o loop seja executado 
 
@@ -101,13 +101,13 @@ int main(){ // funcao main
                 qntIdosos[i]++;
 
             if(idade[j] < 3 || idade[j] > 100)
-                printf("Idade inválida, tente novamente\n");
+                printf("Idade invï¿½lida, tente novamente\n");
 
             }while(idade[j] < 3 || idade[j] > 100);
 
             do{ // TIPO DE INGRESSO
-            printf("\n\t-----ATENÇÃO-----\n");
-            printf("\nA OPÇÃO PREMIUM INCLUI: ENTRADA + PIPOCA MEGA + 2 REFRIGERANTES + CHOCOLATE! \n"); // Questao 9 - nova funcionalidade implantada
+            printf("\n\t-----ATENï¿½ï¿½O-----\n");
+            printf("\nA OPï¿½ï¿½O PREMIUM INCLUI: ENTRADA + PIPOCA MEGA + 2 REFRIGERANTES + CHOCOLATE! \n"); // Questao 9 - nova funcionalidade implantada
             printf("\n\t-------------------\n\n");
             printf("Ingresso:\n1. Meia(R$%.2f)\n2. Inteira(R$%.2f)\n3. Premium(R$%.2f) \n", MEIA, INTEIRA, PREMIUM);
             scanf("%d", &opcaoIngresso[j]);
@@ -120,7 +120,7 @@ int main(){ // funcao main
                 qntPremium[i]++; // Questao 9 - nova funcionalidade implementada
 
             if(opcaoIngresso[j] != 1 && opcaoIngresso[j] != 2 && opcaoIngresso[j] != 3)
-                printf("Opção inválida, tente novamente\n");
+                printf("Opï¿½ï¿½o invï¿½lida, tente novamente\n");
             }while(opcaoIngresso[j] != 1 && opcaoIngresso[j] != 2 && opcaoIngresso[j] != 3);
 
             if((sexo[j] == 'm' || sexo[j] == 'M') && idade[j] >= 18)
@@ -133,7 +133,7 @@ int main(){ // funcao main
             parar = 0;
 
             if(qntIngresso[i] == SALA)
-                printf("\nIngressos para a sessão esgotados!\n");
+                printf("\nIngressos para a sessï¿½o esgotados!\n");
             else if(j == 11 || j > 20){
                 printf("Digite 1 para parar ou 0 para continuar\n");
                 scanf("%d", &parar);
@@ -142,20 +142,20 @@ int main(){ // funcao main
             i++;
         }while(qntSessao >= i);
     }else{
-        printf("Erro: pressione R para recomeçar: ");
+        printf("Erro: pressione R para recomeï¿½ar: ");
         scanf(" %c", &recomecar);
     }
     }while(recomecar == 'r' || recomecar == 'R');
 
     for(i = 1; i <= qntSessao; i++){
-    printf("Sessão %d:\n", i);
+    printf("Sessï¿½o %d:\n", i);
     printf("Nome do filme: %s\n\n", nomeFilme[i]);
     printf("Quantidade de pessoas do sexo feminino: %d\n", qntMulheres[i]);
     printf("Quantidade de pessoas do sexo masculino: %d\n", qntHomens[i]);
     printf("Quantidade de ingressos vendidos: %d\n\n", qntIngresso[i]);
 
-    printf("\tDados da Sessão\n");
-    printf("Crianças: %d\n", qntCriancas[i]);
+    printf("\tDados da Sessï¿½o\n");
+    printf("Crianï¿½as: %d\n", qntCriancas[i]);
     printf("Adolescentes: %d\n", qntAdolescentes[i]);
     printf("Adultos: %d\n", qntAdultos[i]);
     printf("Idosos: %d\n\n", qntIdosos[i]);
