@@ -20,11 +20,11 @@ Quando um código nâo da para ser claro e for preciso fazer um comentario, de pre
 #include <stdio.h> // inclusão de biblioteca padrao
 #include <locale.h> // inclusão de biblioteca para tradução
 #include <stdlib.h> // inclusão de biblioteca para o comando clear
-#define SALA 90 // capacidade da sala - quantidade de ingressos para aquela sessao
-#define SESSOES 2 // quantidade de sessões aceitas
-#define INTEIRA 50.00 // valor do ingresso - inteira
-#define MEIA 25.00 // valor do ingresso - meia
-#define PREMIUM 120.00 // valor do ingresso - Premium
+#define SALA 90 // Definir capacidade da sala - quantidade de ingressos para aquela sessao
+#define SESSOES 2 // Definir quantidade de sessões aceitas
+#define INTEIRA 50.00 // Definir valor do ingresso - inteira
+#define MEIA 25.00 // Definir valor do ingresso - meia
+#define PREMIUM 120.00 // Definir valor do ingresso - Premium
 
 int main(){ // funcao main
 
