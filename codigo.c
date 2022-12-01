@@ -165,7 +165,7 @@ int main(){ // funcao main
 
     printf("Ingressos - Inteiras(R$%.2f): %d\n", INTEIRA, qntInteiras[i]);
     printf("Ingressos - Meias(R$%.2f): %d\n", MEIA, qntMeias[i]);
-    printf("Ingressos - Premuum (R%.2f) : %d\n", PREMIUM, qntPremium[i]); // Questao 9 - nova funcionalidade implantada
+    printf("Ingressos - Premium (R$%.2f) : %d\n", PREMIUM, qntPremium[i]); // Questao 9 - nova funcionalidade implantada
     printf("Total arrecadado: (R$%.2f)\n\n", (qntInteiras[i] * INTEIRA) + (qntMeias[i] * MEIA) + (qntPremium[i] * PREMIUM));
 
     if(qntInteiras[i] > qntMeias[i] && qntInteiras[i] > qntPremium[i]) 
